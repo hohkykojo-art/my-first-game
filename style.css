@@ -1,0 +1,47 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    /* Ngăn người dùng chạm giữ bị bôi đen chữ trên iPhone */
+    user-select: none; 
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+canvas {
+    background: #2e3d52; /* Màu nền của bãi chiến trường */
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #4a6572;
+    border-radius: 8px;
+    max-width: 100%; /* Giúp canvas tự co giãn vừa màn hình iPhone */
+}
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f9aa33;
+    color: #232f34;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px #d78510;
+}
+
+button:active {
+    box-shadow: 0 1px #d78510;
+    transform: translateY(3px); /* Hiệu ứng lún nút khi bấm trên màn hình cảm ứng */
+}
